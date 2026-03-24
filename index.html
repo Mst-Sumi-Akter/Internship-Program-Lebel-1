@@ -3,37 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Emergency Help Finder | HelpNow</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <h2>MySite</h2>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="HelpNow Logo" style="height: 48px;">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple static website project.</p>
-  </section>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container hero-container">
+    <div class="hero-text">
+      <h1>Find <span>Emergency</span> Help Instantly</h1>
+      <p>Your safety is our top priority. Access emergency services, nearby hospitals, and critical support with just a single tap.</p>
+      <div class="hero-buttons">
+        <a href="#toast-ambulance" class="btn emergency-btn"> Ambulance</a>
+        <a href="#toast-police" class="btn emergency-btn"> Police</a>
+        <a href="#toast-fire" class="btn emergency-btn"> Fire Service</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/image1.png" alt="Emergency Help Finder">
+    </div>
+  </div>
+</section>
 
-  <!-- Image Section -->
-  <section class="content">
-    <img src="images/github.JPG" alt="Sample Image">
-    <p>This website is built using HTML and CSS.</p>
-  </section>
+<!-- Info Section -->
+<section class="info-section">
+  <div class="container">
+    <div class="info-text">
+      <h2 style="text-align: center;">Why Choose HelpNow?</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">In critical moments, every second counts. HelpNow provides you with an immediate connection to the essential emergency services in your area. We aim to save lives by bridging the gap between individuals and professional responders.</p>
+      <ul style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+        <li>✅ 24/7 Availability</li>
+        <li>✅ Fast & Reliable</li>
+        <li>✅ Completely Free to Use</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 MySite | All Rights Reserved</p>
-  </footer>
+<!-- How It Works Section -->
+<section class="how-it-works">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Choose Service</h3>
+        <p>Select the emergency service you need from our options like Ambulance, Police, or Fire.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Confirm Location</h3>
+        <p>Your location helps responders reach you quickly and efficiently during an emergency.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Get Help Call</h3>
+        <p>You will be connected instantly to the required department to request immediate assistance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 HelpNow | Designed & Developed by <strong>Shumi Akter</strong></p>
+</footer>
+
+<!-- CSS Toasts -->
+<div id="toast-ambulance" class="css-toast">
+  <span>✅ Connecting to Ambulance... <a href="tel:999" style="color:var(--primary); font-weight:bold; margin-left:10px;">Proceed</a></span>
+  <a href="#" class="toast-close">✖</a>
+</div>
+<div id="toast-police" class="css-toast">
+  <span>✅ Connecting to Police... <a href="tel:999" style="color:var(--primary); font-weight:bold; margin-left:10px;">Proceed</a></span>
+  <a href="#" class="toast-close">✖</a>
+</div>
+<div id="toast-fire" class="css-toast">
+  <span>✅ Connecting to Fire Station... <a href="tel:999" style="color:var(--primary); font-weight:bold; margin-left:10px;">Proceed</a></span>
+  <a href="#" class="toast-close">✖</a>
+</div>
 
 </body>
 </html>

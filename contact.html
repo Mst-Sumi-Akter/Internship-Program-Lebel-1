@@ -3,35 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>Contact | HelpNow</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav>
-    <h2>MySite</h2>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="navbar">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="HelpNow Logo" style="height: 48px;">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <section class="content">
-    <h1>Contact Us</h1>
+<section class="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-form-wrapper">
+      <form id="contactForm">
+        <div class="input-group">
+          <input type="text" id="nameInput" placeholder="Your Name" required>
+        </div>
+        <div class="input-group">
+          <input type="email" id="emailInput" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <textarea id="messageInput" placeholder="Message" required></textarea>
+        </div>
+        <a href="#toast-contact" class="btn btn-submit" style="text-align: center; text-decoration: none; display: block;">Send Message</a>
+      </form>
+    </div>
+  </div>
+</section>
 
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
+<footer>
+  <p>© 2026 HelpNow | Designed & Developed by <strong>Shumi Akter</strong></p>
+</footer>
 
-  </section>
-
-  <footer>
-    <p>© 2026 MySite</p>
-  </footer>
+<!-- CSS Toasts -->
+<div id="toast-contact" class="css-toast">
+  <span>✅ Message sent successfully! We will contact you soon.</span>
+  <a href="#" class="toast-close">✖</a>
+</div>
 
 </body>
 </html>
